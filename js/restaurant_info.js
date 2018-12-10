@@ -166,6 +166,7 @@ createReviewHTML = (review) => {
 
   const comments = document.createElement('p');
   comments.innerHTML = review.comments;
+  comments.setAttribute("class", "reviews-comments");    
   li.appendChild(comments);
 
   return li;

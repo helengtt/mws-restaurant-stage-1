@@ -7,11 +7,21 @@
 /* fit mobile phone portrait*/
 @media screen and (max-width: 420px) {
     /* ====================== Homepage ====================== */
+    #breadcrumb li+li:before {
+        padding: 0;
+    }
+
     .filter-options {
         height: 130px;
     }
     .filter-options select {
         width: 90%;
+    }
+    #restaurants-list {
+        padding: 30px 0 60px;
+    }
+    #restaurants-list li {
+        width: 100%;
     }
     #restaurants-list li h1 {
         font-size: 12pt;
@@ -35,14 +45,17 @@
     }
 
     #breadcrumb,
+    #restaurant-img,
+    #restaurant-cuisine,
     #restaurant-container,
     #reviews-container,
+    #reviews-list li,
     .inside #footer {
         width: 100%;
     }
 
     #breadcrumb li{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     header h1,
@@ -56,12 +69,18 @@
     }
 
     /* reviews */
+    #reviews-list li {
+        border-width: 0;
+        padding: 0 0 20px;
+    }
+
+    .restaurant-img,
     .reviews-item {
         border-radius: 15px 0;
     }
     .reviews-name {
         float: left;
-        width: 48%;
+        width: 50%;
         background-color: #252831;
         color: white;
         padding-left: 2%;
@@ -70,7 +89,7 @@
     }
     .reviews-date {
         float: right;
-        width: 48%;  
+        width: 50%;  
         background-color: #252831;
         color: white;
         text-align: right;
@@ -83,6 +102,9 @@
         color: white;
         border-radius: 3px; 
         padding-left: 2%;
+    }
+    .reviews-comments {
+        padding: 0 10px;
     }
 
 }
@@ -98,6 +120,12 @@
     .filter-options select {
         width: 30%;
     }
+    #restaurants-list {
+        padding: 30px 0 60px;
+    }
+    #restaurants-list li {
+        width: 100%;
+    }
     /* ====================== Restaurant Details ====================== */
 
     .inside #maincontent {
@@ -112,8 +140,11 @@
     }
 
     #breadcrumb,
+    #restaurant-img,
+    #restaurant-cuisine,
     #restaurant-container,
     #reviews-container,
+    #reviews-list li,
     .inside #footer {
         width: 100%;
     }
@@ -127,12 +158,13 @@
     }
 
     /* reviews */
+    .restaurant-img,
     .reviews-item {
         border-radius: 15px 0;
     }
     .reviews-name {
         float: left;
-        width: 48%;
+        width: 50%;
         background-color: #252831;
         color: white;
         padding-left: 2%;
@@ -141,7 +173,7 @@
     }
     .reviews-date {
         float: right;
-        width: 48%;  
+        width: 50%;  
         background-color: #252831;
         color: white;
         text-align: right;
@@ -154,6 +186,7 @@
         color: white;
         border-radius: 3px; 
         padding-left: 2%;
+
     }
 
 }
