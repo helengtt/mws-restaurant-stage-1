@@ -150,23 +150,23 @@ createReviewHTML = (review) => {
   const li = document.createElement('li');
   const name = document.createElement('p');
   name.innerHTML = review.name;
-  li.setAttribute("class", "reviews-item");  
-  name.setAttribute("class", "reviews-name");  
+  li.setAttribute('class', 'reviews-item');  
+  name.setAttribute('class', 'reviews-name');  
   li.appendChild(name);
 
   const date = document.createElement('p');
   date.innerHTML = review.date;
-  date.setAttribute("class", "reviews-date");
+  date.setAttribute('class', 'reviews-date');
   li.appendChild(date);
 
   const rating = document.createElement('p');
   rating.innerHTML = `Rating: ${review.rating}`;
-  rating.setAttribute("class", "reviews-rating");  
+  rating.setAttribute('class', 'reviews-rating');  
   li.appendChild(rating);
 
   const comments = document.createElement('p');
   comments.innerHTML = review.comments;
-  comments.setAttribute("class", "reviews-comments");    
+  comments.setAttribute('class', 'reviews-comments');    
   li.appendChild(comments);
 
   return li;

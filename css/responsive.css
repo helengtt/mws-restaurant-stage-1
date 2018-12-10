@@ -20,9 +20,6 @@
     #restaurants-list {
         padding: 30px 0 60px;
     }
-    #restaurants-list li {
-        width: 100%;
-    }
     #restaurants-list li h1 {
         font-size: 12pt;
     }
@@ -188,5 +185,27 @@
         padding-left: 2%;
 
     }
+}
 
+/* restaurant list width */
+
+@media screen and (max-width: 630px) {
+    #restaurants-list li {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 631px) and (max-width: 767px) {
+    #restaurants-list li {
+        width: 45%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:1024px) and (orientation: landscape) {
+    #restaurants-list li {
+        width: 30%;
+    }
+}
+@media screen and (min-width: 1025px) {
+    #restaurants-list li {
+        max-width: 350px;
+    }
 }
