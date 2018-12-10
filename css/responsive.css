@@ -4,16 +4,14 @@
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 400px) {
+/* fit mobile phone portrait*/
+@media screen and (max-width: 420px) {
     /* ====================== Homepage ====================== */
     .filter-options {
         height: 130px;
     }
     .filter-options select {
         width: 90%;
-    }
-    #restaurants-list {
-        padding: 10px 15px 60px;
     }
     #restaurants-list li h1 {
         font-size: 12pt;
@@ -25,7 +23,7 @@
 
     /* ====================== Restaurant Details ====================== */
 
-    #maincontent {
+    .inside #maincontent {
         margin-top: 135px;
         position: relative;
     }   
@@ -87,9 +85,75 @@
         padding-left: 2%;
     }
 
-
 }
 
-@media screen and (min-width: 401px) and (max-width: 800px) {
+/* fit pad portrait*/
+@media screen and (min-width: 768px) and (max-width:1024px) and (orientation: portrait) {
+    /* ====================== Homepage ====================== */
+    .filter-options h2,
+    #neighborhoods-select,
+    #cuisines-select {
+        font-size: 20px;
+    }
+    .filter-options select {
+        width: 30%;
+    }
+    /* ====================== Restaurant Details ====================== */
+
+    .inside #maincontent {
+        margin-top: 135px;
+        position: relative;
+    }   
+
+    .inside #map-container {
+        height: 300px;
+        width: 100%;
+        position: static;
+    }
+
+    #breadcrumb,
+    #restaurant-container,
+    #reviews-container,
+    .inside #footer {
+        width: 100%;
+    }
+
+    #breadcrumb li{
+        font-size: 20px;
+    }
+
+    #restaurant-container {
+        padding-top: 20px;
+    }
+
+    /* reviews */
+    .reviews-item {
+        border-radius: 15px 0;
+    }
+    .reviews-name {
+        float: left;
+        width: 48%;
+        background-color: #252831;
+        color: white;
+        padding-left: 2%;
+        border-radius: 3px 0 0 3px;
+        border-right: none;
+    }
+    .reviews-date {
+        float: right;
+        width: 48%;  
+        background-color: #252831;
+        color: white;
+        text-align: right;
+        padding-right: 2%;
+        border-radius: 0 3px 3px 0;                                        
+    }
+    .reviews-rating {
+        clear: both;
+        background-color: #f58500;
+        color: white;
+        border-radius: 3px; 
+        padding-left: 2%;
+    }
 
 }
