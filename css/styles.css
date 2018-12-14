@@ -45,6 +45,21 @@ h1, h2, h3, h4, h5, h6 {
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+/* skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #f00;
+  color: #fff ;
+  padding: 8px;
+  z-index: 1002;
+}
+.skip-link:focus{
+  top: 0;
+}
+
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
@@ -139,6 +154,11 @@ nav h1 a {
   margin: 10px;
   padding: 0 10px;
   width: 200px;
+}
+
+/* semantic elements */
+label {
+  display: none;
 }
 
 /* ====================== Restaurant Listing ====================== */
