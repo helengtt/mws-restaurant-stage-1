@@ -156,11 +156,6 @@ nav h1 a {
   width: 200px;
 }
 
-/* semantic elements */
-label {
-  display: none;
-}
-
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
   background-color: #f3f3f3;

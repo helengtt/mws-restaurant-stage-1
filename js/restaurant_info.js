@@ -82,6 +82,8 @@ fetchRestaurantFromURL = (callback) => {
 fillRestaurantHTML = (restaurant = self.restaurant) => {
   const name = document.getElementById('restaurant-name');
   name.innerHTML = restaurant.name;
+  // add focus with tabindex
+  name.setAttribute('tabindex','0');
 
   const address = document.getElementById('restaurant-address');
   address.innerHTML = restaurant.address;

@@ -24,19 +24,21 @@
 
   <main id="maincontent">
     <section id="map-container">
-      <div id="map"></div>
+      <!-- aria -->
+      <div id="map" aria-label="map"></div>
     </section>
     <section id="filter">
-      <div class="filter-options" >
+      <!-- aria -->
+      <div class="filter-options" tabindex="0" role="group" aria-label="filter-options">
         <h2>Filter Results</h2>
-        <!-- semantic elements -->
-        <label for="neighborhoods">Neighborhoods</label>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <!-- aria -->
+        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()"
+                aria-label="neighborhoods-select">
           <option value="all">All Neighborhoods</option>
         </select>
-        <!-- semantic elements -->        
-        <label for="cuisines">Cuisines</label>        
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <!-- aria -->
+        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()"
+                aria-label="cuisines-select">
           <option value="all">All Cuisines</option>
         </select>
       </div>
