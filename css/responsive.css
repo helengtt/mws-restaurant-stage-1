@@ -5,7 +5,7 @@
 }
 
 /* fit mobile phone portrait*/
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
     /* ====================== Homepage ====================== */
     #breadcrumb li+li:before {
         padding: 0;

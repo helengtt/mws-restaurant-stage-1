@@ -1,4 +1,4 @@
-var CACHE_NAME = 'my-site-cache-v2';
+var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
     '/',
     '/index.html',
@@ -25,7 +25,8 @@ var urlsToCache = [
 
 self.addEventListener('install', function(event){
     event.waitUntil(
-        caches.open(CACHE_NAME).then(function(cache){
+        caches.open(CACHE_NAME)
+        .then(function(cache){
             console.log('Opened cache');
             return cache.addAll(urlsToCache);   
         })
@@ -49,7 +50,7 @@ self.addEventListener('activate', function(event){
 
 self.addEventListener('fetch', function(event) {
   event.respondWith(
-    caches.match(event.request)
+    caches.match(event.request, {'ignoreSearch': true})
       .then(function(response) {
         // Cache hit - return response
         if (response) {
